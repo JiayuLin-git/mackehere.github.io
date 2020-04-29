@@ -2,18 +2,36 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Upload and download file from server or to server | Mackenzie&#39;s Tech Adventure</title>
+<title>Markdown grammar | Mackenzie&#39;s Tech Adventure</title>
 <link rel="shortcut icon" href="https://github.com/JiayuLin-git/favicon.ico?v=1588195070115">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://github.com/JiayuLin-git/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="Upload and download file from server or to server | Mackenzie&#39;s Tech Adventure - Atom Feed" href="https://github.com/JiayuLin-git/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="Markdown grammar | Mackenzie&#39;s Tech Adventure - Atom Feed" href="https://github.com/JiayuLin-git/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="It's my first time to use linux in this semester, I have many questions to solve, keep this tag as a tip for myself.
-Upl..." />
-    <meta name="keywords" content="Linux Tips,INF551" />
+    <meta name="description" content="Markdown 目录：
+[TOC]
+Markdown 标题：
+这是 H1
+这是 H2
+这是 H3
+Markdown 列表：
+
+列表项目
+
+
+列表项目
+
+斜体或_斜体_
+粗体
+加粗斜体
+删除线
+Markdown 插入链接：
+链接文字
+Mar..." />
+    <meta name="keywords" content="Linux Tips" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
@@ -79,71 +97,72 @@ Upl..." />
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              Upload and download file from server or to server
+              Markdown grammar
             </h2>
             <div class="post-info">
               <span>
-                2020-04-27
+                2020-04-28
               </span>
               <span>
-                2 min read
+                1 min read
               </span>
               
                 <a href="https://github.com/JiayuLin-git/tag/z_UJafqFf/" class="post-tag">
                   # Linux Tips
                 </a>
               
-                <a href="https://github.com/JiayuLin-git/tag/JKFO47TYL/" class="post-tag">
-                  # INF551
-                </a>
-              
             </div>
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <p>It's my first time to use linux in this semester, I have many questions to solve, keep this tag as a tip for myself.</p>
-<h1 id="upload-and-download-files-or-directories-from-server-and-to-server">Upload and download files or directories from server and to server.</h1>
-<h2 id="local-to-server">Local to server</h2>
+                <p>Markdown 目录：<br>
+[TOC]</p>
+<p>Markdown 标题：</p>
+<h1 id="这是-h1">这是 H1</h1>
+<h2 id="这是-h2">这是 H2</h2>
+<h3 id="这是-h3">这是 H3</h3>
+<p>Markdown 列表：</p>
 <ul>
-<li>First thing first, login in to the server:<br>
-<code>sftp &lt;user_name&gt;@XX.XXX.XXX.XX</code><br>
-enter the password of server.</li>
+<li>列表项目</li>
 </ul>
-<h3 id="upload-file-to-the-server">Upload file to the server</h3>
-<p><code>&gt;sftp put &lt;path of local document&gt; &lt;path on server&gt;</code><br>
-In this part, should pay more attention on the path of local, the path would comes from  C:/... NOT FROM C:/cygwin/</p>
-<h3 id="upload-directory-to-the-server">Upload directory to the server</h3>
-<p><code>&gt;sftp put -r &lt;path of local directory&gt; &lt;path on server&gt;</code></p>
-<h2 id="server-to-local">Server to local</h2>
-<h3 id="download-file-to-local">Download file to local</h3>
-<p><code>&gt;sftp get &lt;path of server document&gt; &lt;path on local&gt;</code></p>
-<h3 id="download-directory-to-local">Download directory to local</h3>
-<p><code>&gt;sftp get -r &lt;path of server directory&gt; &lt;path on local&gt;</code></p>
-<h2 id="other-command-of-sftp">Other command of sftp</h2>
-<p><code>lcd</code>: Enter the path of local server<br>
-<code>cd</code>: Enter the path of cloud server<br>
-<code>pwd</code>: Query the path of this document/directory<br>
-<code>lpwd</code>: Query the path of local</p>
-<p>Most of the origanial comment could be used in the sftp mode. The local ones need to +<code>l</code></p>
+<ol>
+<li>列表项目</li>
+</ol>
+<p><em>斜体</em>或_斜体_<br>
+<strong>粗体</strong><br>
+<em><strong>加粗斜体</strong></em><br>
+<s>删除线</s></p>
+<p>Markdown 插入链接：<br>
+<a href="%E9%93%BE%E6%8E%A5%E7%BD%91%E5%9D%80" title="标题">链接文字</a></p>
+<p>Markdown 插入图片：<br>
+<img src="/path/to/img.jpg" alt="alt text" title="Title" loading="lazy"></p>
+<p>Markdown 插入代码块：<br>
+<code>python #!/usr/bin/python3 print(&quot;Hello, World!&quot;);</code></p>
+<p>Markdown 引用：</p>
+<blockquote>
+<p>引用内容</p>
+</blockquote>
+<h2 id="markdown-分割线">Markdown 分割线：</h2>
+<p>Markdown 换行：<br>
+<br></p>
+<p>Markdown 段首缩进：<br>
+  or   表示一个半角的空格<br>
+  or    表示一个全角的空格<br>
+   两个全角的空格（用的比较多）<br>
+  or   不断行的空白格</p>
+<p>Credit by: https://www.jianshu.com/p/65ab196bef04</p>
 
               </div>
               <div class="toc-container">
                 <ul class="markdownIt-TOC">
-<li><a href="#upload-and-download-files-or-directories-from-server-and-to-server">Upload and download files or directories from server and to server.</a>
+<li><a href="#%E8%BF%99%E6%98%AF-h1">这是 H1</a>
 <ul>
-<li><a href="#local-to-server">Local to server</a>
+<li><a href="#%E8%BF%99%E6%98%AF-h2">这是 H2</a>
 <ul>
-<li><a href="#upload-file-to-the-server">Upload file to the server</a></li>
-<li><a href="#upload-directory-to-the-server">Upload directory to the server</a></li>
+<li><a href="#%E8%BF%99%E6%98%AF-h3">这是 H3</a></li>
 </ul>
 </li>
-<li><a href="#server-to-local">Server to local</a>
-<ul>
-<li><a href="#download-file-to-local">Download file to local</a></li>
-<li><a href="#download-directory-to-local">Download directory to local</a></li>
-</ul>
-</li>
-<li><a href="#other-command-of-sftp">Other command of sftp</a></li>
+<li><a href="#markdown-%E5%88%86%E5%89%B2%E7%BA%BF">Markdown 分割线：</a></li>
 </ul>
 </li>
 </ul>
@@ -153,6 +172,15 @@ In this part, should pay more attention on the path of local, the path would com
           </article>
         </div>
 
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://github.com/JiayuLin-git/post/upload-and-download-file-from-server-or-to-server/">
+              <h3 class="post-title">
+                Upload and download file from server or to server
+              </h3>
+            </a>
+          </div>
         
 
         

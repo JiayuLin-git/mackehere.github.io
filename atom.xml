@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/JiayuLin-git</id>
     <title>Mackenzie&apos;s Tech Adventure</title>
-    <updated>2020-04-29T20:40:10.166Z</updated>
+    <updated>2020-04-29T21:18:09.078Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://github.com/JiayuLin-git"/>
     <link rel="self" href="https://github.com/JiayuLin-git/atom.xml"/>
@@ -10,6 +10,50 @@
     <logo>https://github.com/JiayuLin-git/images/avatar.png</logo>
     <icon>https://github.com/JiayuLin-git/favicon.ico</icon>
     <rights>All rights reserved 2020, Mackenzie&apos;s Tech Adventure</rights>
+    <entry>
+        <title type="html"><![CDATA[Markdown grammar]]></title>
+        <id>https://github.com/JiayuLin-git/post/markdown-grammar/</id>
+        <link href="https://github.com/JiayuLin-git/post/markdown-grammar/">
+        </link>
+        <updated>2020-04-29T05:41:07.000Z</updated>
+        <content type="html"><![CDATA[<p>Markdown 目录：<br>
+[TOC]</p>
+<p>Markdown 标题：</p>
+<h1 id="这是-h1">这是 H1</h1>
+<h2 id="这是-h2">这是 H2</h2>
+<h3 id="这是-h3">这是 H3</h3>
+<p>Markdown 列表：</p>
+<ul>
+<li>列表项目</li>
+</ul>
+<ol>
+<li>列表项目</li>
+</ol>
+<p><em>斜体</em>或_斜体_<br>
+<strong>粗体</strong><br>
+<em><strong>加粗斜体</strong></em><br>
+<s>删除线</s></p>
+<p>Markdown 插入链接：<br>
+<a href="%E9%93%BE%E6%8E%A5%E7%BD%91%E5%9D%80" title="标题">链接文字</a></p>
+<p>Markdown 插入图片：<br>
+<img src="/path/to/img.jpg" alt="alt text" title="Title" loading="lazy"></p>
+<p>Markdown 插入代码块：<br>
+<code>python #!/usr/bin/python3 print(&quot;Hello, World!&quot;);</code></p>
+<p>Markdown 引用：</p>
+<blockquote>
+<p>引用内容</p>
+</blockquote>
+<h2 id="markdown-分割线">Markdown 分割线：</h2>
+<p>Markdown 换行：<br>
+<br></p>
+<p>Markdown 段首缩进：<br>
+  or   表示一个半角的空格<br>
+  or    表示一个全角的空格<br>
+   两个全角的空格（用的比较多）<br>
+  or   不断行的空白格</p>
+<p>Credit by: https://www.jianshu.com/p/65ab196bef04</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Upload and download file from server or to server]]></title>
         <id>https://github.com/JiayuLin-git/post/upload-and-download-file-from-server-or-to-server/</id>
