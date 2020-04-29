@@ -2,23 +2,17 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>关于 | Mackenzie&#39;s Tech Adventure</title>
+<title>Upload and download file from server or to server | Mackenzie&#39;s Tech Adventure</title>
 <link rel="shortcut icon" href="https://github.com/JiayuLin-git/favicon.ico?v=1588192737384">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://github.com/JiayuLin-git/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="关于 | Mackenzie&#39;s Tech Adventure - Atom Feed" href="https://github.com/JiayuLin-git/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="Upload and download file from server or to server | Mackenzie&#39;s Tech Adventure - Atom Feed" href="https://github.com/JiayuLin-git/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="
-欢迎来到我的小站呀，很高兴遇见你！🤝
-
-🏠 关于本站
-👨‍💻 博主是谁
-⛹ 兴趣爱好
-📬 联系我呀
-..." />
+    <meta name="description" content="It's my first time to use linux in this semester, I have many questions to solve, keep this tag as a tip for myself.
+Upl..." />
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
@@ -85,37 +79,63 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              关于
+              Upload and download file from server or to server
             </h2>
             <div class="post-info">
               <span>
-                2019-01-25
+                2020-04-28
               </span>
               <span>
-                1 min read
+                2 min read
               </span>
               
             </div>
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
-</blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<h2 id="联系我呀">📬 联系我呀</h2>
+                <p>It's my first time to use linux in this semester, I have many questions to solve, keep this tag as a tip for myself.</p>
+<h1 id="upload-and-download-files-or-directories-from-server-and-to-server">Upload and download files or directories from server and to server.</h1>
+<h2 id="local-to-server">Local to server</h2>
+<ul>
+<li>First thing first, login in to the server:<br>
+<code>sftp &lt;user_name&gt;@XX.XXX.XXX.XX</code><br>
+enter the password of server.</li>
+</ul>
+<h3 id="upload-file-to-the-server">Upload file to the server</h3>
+<p><code>&gt;sftp put &lt;path of local document&gt; &lt;path on server&gt;</code><br>
+In this part, should pay more attention on the path of local, the path would comes from  C:/... NOT FROM C:/cygwin/</p>
+<h3 id="upload-directory-to-the-server">Upload directory to the server</h3>
+<p><code>&gt;sftp put -r &lt;path of local directory&gt; &lt;path on server&gt;</code></p>
+<h2 id="server-to-local">Server to local</h2>
+<h3 id="download-file-to-local">Download file to local</h3>
+<p><code>&gt;sftp get &lt;path of server document&gt; &lt;path on local&gt;</code></p>
+<h3 id="download-directory-to-local">Download directory to local</h3>
+<p><code>&gt;sftp get -r &lt;path of server directory&gt; &lt;path on local&gt;</code></p>
+<h2 id="other-command-of-sftp">Other command of sftp</h2>
+<p><code>lcd</code>: Enter the path of local server<br>
+<code>cd</code>: Enter the path of cloud server<br>
+<code>pwd</code>: Query the path of this document/directory<br>
+<code>lpwd</code>: Query the path of local</p>
+<p>Most of the origanial comment could be used in the sftp mode. The local ones need to +<code>l</code></p>
 
               </div>
               <div class="toc-container">
                 <ul class="markdownIt-TOC">
-<li>
+<li><a href="#upload-and-download-files-or-directories-from-server-and-to-server">Upload and download files or directories from server and to server.</a>
 <ul>
-<li><a href="#%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99">🏠 关于本站</a></li>
-<li><a href="#%E5%8D%9A%E4%B8%BB%E6%98%AF%E8%B0%81">👨‍💻 博主是谁</a></li>
-<li><a href="#%E5%85%B4%E8%B6%A3%E7%88%B1%E5%A5%BD">⛹ 兴趣爱好</a></li>
-<li><a href="#%E8%81%94%E7%B3%BB%E6%88%91%E5%91%80">📬 联系我呀</a></li>
+<li><a href="#local-to-server">Local to server</a>
+<ul>
+<li><a href="#upload-file-to-the-server">Upload file to the server</a></li>
+<li><a href="#upload-directory-to-the-server">Upload directory to the server</a></li>
+</ul>
+</li>
+<li><a href="#server-to-local">Server to local</a>
+<ul>
+<li><a href="#download-file-to-local">Download file to local</a></li>
+<li><a href="#download-directory-to-local">Download directory to local</a></li>
+</ul>
+</li>
+<li><a href="#other-command-of-sftp">Other command of sftp</a></li>
 </ul>
 </li>
 </ul>

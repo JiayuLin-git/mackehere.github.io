@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/JiayuLin-git</id>
     <title>Mackenzie&apos;s Tech Adventure</title>
-    <updated>2020-04-29T07:18:44.301Z</updated>
+    <updated>2020-04-29T20:39:05.257Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://github.com/JiayuLin-git"/>
     <link rel="self" href="https://github.com/JiayuLin-git/atom.xml"/>
@@ -10,4 +10,36 @@
     <logo>https://github.com/JiayuLin-git/images/avatar.png</logo>
     <icon>https://github.com/JiayuLin-git/favicon.ico</icon>
     <rights>All rights reserved 2020, Mackenzie&apos;s Tech Adventure</rights>
+    <entry>
+        <title type="html"><![CDATA[Upload and download file from server or to server]]></title>
+        <id>https://github.com/JiayuLin-git/post/upload-and-download-file-from-server-or-to-server/</id>
+        <link href="https://github.com/JiayuLin-git/post/upload-and-download-file-from-server-or-to-server/">
+        </link>
+        <updated>2020-04-28T16:19:32.000Z</updated>
+        <content type="html"><![CDATA[<p>It's my first time to use linux in this semester, I have many questions to solve, keep this tag as a tip for myself.</p>
+<h1 id="upload-and-download-files-or-directories-from-server-and-to-server">Upload and download files or directories from server and to server.</h1>
+<h2 id="local-to-server">Local to server</h2>
+<ul>
+<li>First thing first, login in to the server:<br>
+<code>sftp &lt;user_name&gt;@XX.XXX.XXX.XX</code><br>
+enter the password of server.</li>
+</ul>
+<h3 id="upload-file-to-the-server">Upload file to the server</h3>
+<p><code>&gt;sftp put &lt;path of local document&gt; &lt;path on server&gt;</code><br>
+In this part, should pay more attention on the path of local, the path would comes from  C:/... NOT FROM C:/cygwin/</p>
+<h3 id="upload-directory-to-the-server">Upload directory to the server</h3>
+<p><code>&gt;sftp put -r &lt;path of local directory&gt; &lt;path on server&gt;</code></p>
+<h2 id="server-to-local">Server to local</h2>
+<h3 id="download-file-to-local">Download file to local</h3>
+<p><code>&gt;sftp get &lt;path of server document&gt; &lt;path on local&gt;</code></p>
+<h3 id="download-directory-to-local">Download directory to local</h3>
+<p><code>&gt;sftp get -r &lt;path of server directory&gt; &lt;path on local&gt;</code></p>
+<h2 id="other-command-of-sftp">Other command of sftp</h2>
+<p><code>lcd</code>: Enter the path of local server<br>
+<code>cd</code>: Enter the path of cloud server<br>
+<code>pwd</code>: Query the path of this document/directory<br>
+<code>lpwd</code>: Query the path of local</p>
+<p>Most of the origanial comment could be used in the sftp mode. The local ones need to +<code>l</code></p>
+]]></content>
+    </entry>
 </feed>
