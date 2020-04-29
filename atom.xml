@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/JiayuLin-git</id>
     <title>Mackenzie&apos;s Tech Adventure</title>
-    <updated>2020-04-29T20:39:05.257Z</updated>
+    <updated>2020-04-29T20:40:10.166Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://github.com/JiayuLin-git"/>
     <link rel="self" href="https://github.com/JiayuLin-git/atom.xml"/>
@@ -15,7 +15,7 @@
         <id>https://github.com/JiayuLin-git/post/upload-and-download-file-from-server-or-to-server/</id>
         <link href="https://github.com/JiayuLin-git/post/upload-and-download-file-from-server-or-to-server/">
         </link>
-        <updated>2020-04-28T16:19:32.000Z</updated>
+        <updated>2020-04-28T01:19:32.000Z</updated>
         <content type="html"><![CDATA[<p>It's my first time to use linux in this semester, I have many questions to solve, keep this tag as a tip for myself.</p>
 <h1 id="upload-and-download-files-or-directories-from-server-and-to-server">Upload and download files or directories from server and to server.</h1>
 <h2 id="local-to-server">Local to server</h2>
